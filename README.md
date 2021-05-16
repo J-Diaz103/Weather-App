@@ -10,7 +10,7 @@ link to the page
 # Assets
 
 The api:
-https://openweathermap.org/api
+openweather
 
 BootStrap,HTML,Js and CSS were used for this page
 
