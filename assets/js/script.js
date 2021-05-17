@@ -134,28 +134,22 @@ function dayInfoSection(){
 }
 dayInfoSection();
 
-function weekInfoSection(){
-  $("#searchBtn").click(function () {
-for (var i = 0; i< savedCities.length; i++){
-  console.log(savedCities);
-  console.log(savedCities[i].city);
-  fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${savedCities[i].city}&appid=${ApiKey}`) 
-  .then(function (data) {
-    return data.json();
-  })
-  .then(function(data){
-    console.log(data);
-  })
-}
+// function weekInfoSection(){
+//   $("#searchBtn").click(function () {
+// for (var i = 0; i< savedCities.length; i++){
+//   console.log(savedCities);
+//   console.log(savedCities[i].city);
+//   fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${savedCities[i].city}&appid=${ApiKey}`) 
+//   .then(function (data) {
+//     return data.json();
+//   })
+//   .then(function(data){
+//     console.log(data);
+//   })
+// }
 
-  });
-}
-weekInfoSection()
+//   });
+// }
+// weekInfoSection()
 
 
-// /* */
-// savedCities.push({
-//   "cityNames": movieTitleItem,
-//   "city": movieImageItem,
-//   "overview": movieOverviewItem
-// });
