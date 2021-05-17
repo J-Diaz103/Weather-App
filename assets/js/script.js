@@ -134,6 +134,7 @@ function dayInfoSection(){
 }
 dayInfoSection();
 
+// will add the week info
 // function weekInfoSection(){
 //   $("#searchBtn").click(function () {
 // for (var i = 0; i< savedCities.length; i++){
