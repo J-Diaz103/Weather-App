@@ -48,7 +48,7 @@ $("#searchBtn").click(function() {
               </div>
                 `)
 						//nested fetch to pull the uv index data
-					fetch(`http://api.openweathermap.org/data/2.5/uvi?lat=${dataLat}&lon=${dataLon}&appid=${ApiKey}`)
+					fetch(`https://api.openweathermap.org/data/2.5/uvi?lat=${dataLat}&lon=${dataLon}&appid=${ApiKey}`)
 						.then(function(data) {
 							return data.json();
 						})
