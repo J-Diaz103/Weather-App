@@ -15,7 +15,7 @@ $("#searchBtn").click(function() {
 	function dayInfoSection() {
 		$("#searchBtn").click(function() {
 			var searchTerm = $("#search").val();
-			fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchTerm}&appid=${ApiKey}&units=imperial`)
+			fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchTerm}&appid=${ApiKey}&units=imperial`)
 				.then(function(data) {
 					return data.json();
 				})
@@ -98,7 +98,7 @@ $("#searchBtn").click(function() {
 
 	// will add the week info
 	//     function weekInfoSection(citiesNames){
-	//         fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${citiesNames}&appid=${ApiKey}`) 
+	//         fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${citiesNames}&appid=${ApiKey}`) 
 	//         .then(function (data) {
 	//         return data.json();
 	//     })
